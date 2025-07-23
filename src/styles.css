@@ -122,3 +122,15 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
+@media (max-width: 575px) {
+  .note {
+    float: none;
+    margin: 16px auto;
+    width: 90%;
+  }
+  
+  form.create-note {
+    width: 90%;
+  }
+}
