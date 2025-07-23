@@ -1,0 +1,51 @@
+React Note App
+This project is a simple, dynamic note-taking web application built with React.
+Users can add, view, and delete notes in a clean, responsive interface inspired by Google Keep.
+
+TABLE OF CONTENT
+
+Overview
+  - The challenge
+  - Links
+
+My process
+  - Built with
+  - What I learned
+
+Author
+
+OVERVIEW 
+
+- The challenge
+
+  Users should be able to:
+    - Write and save short notes
+    - Expand the note creation area on focus
+    - Add a new note with a title and content
+    - Delete individual notes
+    - Interact with a smooth, minimal UI
+
+- Links
+    - GitHub: https://github.com/Argoneo
+    - Deployed on [Render](https://render.com)
+
+- My process
+  - Built with
+    - React (Functional components + Hooks)
+    - JavaScript (ES6)
+    - HTML5
+    - CSS3
+    - Material-UI (Icons, Buttons, Animations)
+    - Google Fonts (McLaren, Montserrat)
+    - Responsive layout and clean design
+
+- What I learned
+  - How to use useState for local component state
+  - How to lift state and manage child-to-parent communication
+  - How to dynamically render components with .map()
+  - How to handle simple form logic in React
+  - How to integrate Material-UI for a polished interface
+  - How to conditionally render UI based on state
+
+Author
+GitHub – @Argoneo
