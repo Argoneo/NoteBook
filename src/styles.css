@@ -134,3 +134,10 @@ form.create-note button {
   }
 }
 
+  @media (max-width: 500px) {
+    .note {
+    width: 200px;
+    margin: 16px;
+    }
+}
+
