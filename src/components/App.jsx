@@ -1,4 +1,3 @@
-// Import React and useState hook
 import React, { useState } from "react";
 
 // Import child components
@@ -8,19 +7,16 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  // State to store all notes
   const [notes, setNotes] = useState([]);
 
-  // Function to add a new note to the notes array
   function addNote(newNote) {
-    setNotes(prevNotes => {
+    setNotes((prevNotes) => {
       return [...prevNotes, newNote];
     });
   }
 
-  // Function to delete a note by its index (id)
   function deleteNote(id) {
-    setNotes(prevNotes => {
+    setNotes((prevNotes) => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;
       });
@@ -29,29 +25,28 @@ function App() {
 
   return (
     <div>
-      {/* Top header */}
       <Header />
-
-      {/* Input area for creating new notes */}
       <CreateArea onAdd={addNote} />
 
-      {/* Render all notes */}
-      {notes.map((noteItem, index) => {
-        return (
-          <Note
-            key={index}            // Unique key for each note
-            id={index}             // Pass index as id for deletion
-            title={noteItem.title} // Note title
-            content={noteItem.content} // Note content
-            onDelete={deleteNote}  // Delete handler
-          />
-        );
-      })}
+      {/* Contenitore flessibile per le note */}
+      <div className="note-container">
+        {notes.map((noteItem, index) => {
+          return (
+            <Note
+              key={index}
+              id={index}
+              title={noteItem.title}
+              content={noteItem.content}
+              onDelete={deleteNote}
+            />
+          );
+        })}
+      </div>
 
-      {/* Bottom footer */}
       <Footer />
     </div>
   );
 }
 
 export default App;
+
