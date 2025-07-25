@@ -86,8 +86,9 @@ footer p {
 
 /* Form to create a new note */
 form.create-note {
-  position: relative;
-  width: 480px;
+ position: relative;
+  width: 100%;
+  max-width: 480px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
@@ -134,10 +135,4 @@ form.create-note button {
   }
 }
 
-  @media (max-width: 500px) {
-    .note {
-    width: 200px;
-    margin: 16px;
-    }
-}
 
