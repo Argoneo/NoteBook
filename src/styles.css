@@ -54,7 +54,6 @@ footer p {
   padding: 10px;
   width: 240px;
   margin: 16px;
-  float: left;
 }
 
 /* Note title */
@@ -69,6 +68,12 @@ footer p {
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra le note nella riga */
 }
 
 /* Delete button on each note */
